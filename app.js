@@ -4,10 +4,11 @@ const colors = require("colors");
 const path = require("path");
 const fileUpload = require("express-fileupload");
 const { unknownEndpoints, errorHandler } = require("./middleware/error");
+dotenv.config({ path: "./config/config.env" });
+
 const connectDb = require("./config/db");
 const app = express();
 
-dotenv.config({ path: "./config/config.env" });
 
 connectDb();
 

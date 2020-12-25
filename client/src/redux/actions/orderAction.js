@@ -1,6 +1,6 @@
 import axios from "axios";
-import * as orderConstants from "../constants/orderConstants";
-import * as cartConstants from "../constants/cartConstants";
+import * as orderConstants from "../../constants/orderConstants";
+import * as cartConstants from "../../constants/cartConstants";
 
 export const createOrder = (orderData) => async (dispatch, getState) => {
   try {

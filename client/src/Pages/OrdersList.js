@@ -3,7 +3,7 @@ import { Table, Button } from "react-bootstrap";
 import { LinkContainer } from "react-router-bootstrap";
 import { useDispatch, useSelector } from "react-redux";
 import ErrorMessage from "../Components/Message/errorMessage";
-import { listOrders } from "../actions/orderAction";
+import { listOrders } from "../redux/actions/orderAction";
 import TableLoader from "../Components/Loader/TableLoader";
 
 const OrderList = () => {

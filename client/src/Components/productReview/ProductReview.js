@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Row, Col, ListGroup, Form } from "react-bootstrap";
 import { useDispatch, useSelector } from "react-redux";
-import * as productAction from "../../actions/productAction";
+import * as productAction from "../../redux/actions/productAction";
 import ErrorMessage from "../Message/errorMessage";
 import { Link } from "react-router-dom";
 import Rating from "../Rating/Rating";

@@ -1,4 +1,4 @@
-import * as userConstants from "../constants/userConstants";
+import * as userConstants from "../../constants/userConstants";
 
 export const userLogin = (state = {}, action) => {
   switch (action.type) {

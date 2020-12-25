@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { Row, Col, Image, ListGroup, Card } from "react-bootstrap";
-import * as productAction from "../actions/productAction";
+import * as productAction from "../redux/actions/productAction";
 import ErrorMessage from "../Components/Message/errorMessage";
 import ProductReview from "../Components/productReview/ProductReview";
 import Rating from "../Components/Rating/Rating";
@@ -15,7 +15,7 @@ import {
 } from "@material-ui/core/";
 import * as productConstants from "../constants/productConstants";
 import SinglePageLoader from "../Components/Loader/SinglePageLoader";
-import { addToCart } from "../actions/cartAction";
+import { addToCart } from "../redux/actions/cartAction";
 
 const useStyles = makeStyles((theme) => ({
   typography: {
@@ -78,7 +78,7 @@ const ProductDetails = ({ match, history }) => {
           <Row>
             <Col md={6}>
               <Image
-                src={`https://shoppoint.herokuapp.com/${product.productImage}`}
+                src={`/${product.productImage}`}
                 alt={product.name}
                 fluid
               />

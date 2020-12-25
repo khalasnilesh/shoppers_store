@@ -27,7 +27,7 @@ import {
   listProductsForAdmin,
   deleteProduct,
   createProduct,
-} from "../actions/productAction";
+} from "../redux/actions/productAction";
 import * as productConstants from "../constants/productConstants";
 import { confirmAlert } from "react-confirm-alert"; // Import
 import "react-confirm-alert/src/react-confirm-alert.css";

@@ -3,7 +3,7 @@ import { Form } from "react-bootstrap";
 import { useDispatch } from "react-redux";
 import FormContainer from "../Components/FormContainer/FormContainer";
 import CheckoutSteps from "../Components/CheckoutStep/CheckoutSteps";
-import { savePaymentMethod } from "../actions/cartAction";
+import { savePaymentMethod } from "../redux/actions/cartAction";
 import {
   Button,
   Radio,

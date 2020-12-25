@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { Row, Col } from "react-bootstrap";
-import * as productAction from "../actions/productAction";
+import * as productAction from "../redux/actions/productAction";
 import Product from "../Components/Product/Product";
 import Filter from "../Components/Filter/Filter";
 import ErrorMessage from "../Components/Message/errorMessage";

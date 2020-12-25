@@ -8,7 +8,7 @@ import { Button } from "@material-ui/core/";
 import ErrorMessage from "../Components/Message/errorMessage";
 import Message from "../Components/InfoMessage/Message";
 import Loader from "../Components/Loader/Loader";
-import { getOrder, payOrder, deliverOrder } from "../actions/orderAction";
+import { getOrder, payOrder, deliverOrder } from "../redux/actions/orderAction";
 import {
   ORDER_PAY_RESET,
   ORDER_DELIVER_RESET,
@@ -142,7 +142,7 @@ const Order = ({ match }) => {
                             <Row>
                               <Col md={1}>
                                 <Image
-                                  src={`https://shoppoint.herokuapp.com/${item.productImage}`}
+                                  src={`/${item.productImage}`}
                                   alt={item.productName}
                                   fluid
                                   rounded

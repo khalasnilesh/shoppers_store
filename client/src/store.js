@@ -8,7 +8,7 @@ import {
   deleteProduct,
   createProduct,
   EditProduct,
-} from "./reducers/productReducers";
+} from "./redux/reducers/productReducers";
 
 import {
   userLogin,
@@ -19,8 +19,8 @@ import {
   getUser,
   forgotPassword,
   resetPassword,
-} from "./reducers/userReducers";
-import { cartReducer } from "./reducers/cartReducers";
+} from "./redux/reducers/userReducers";
+import { cartReducer } from "./redux/reducers/cartReducers";
 import {
   createOrderReducer,
   getOrder,
@@ -28,7 +28,7 @@ import {
   orderDeliverReducer,
   authOrders,
   listOrders,
-} from "./reducers/orderReducers";
+} from "./redux/reducers/orderReducers";
 
 const rootReducer = combineReducers({
   productList: listProducts,

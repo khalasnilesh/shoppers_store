@@ -10,7 +10,7 @@ import {
   CircularProgress,
   makeStyles,
 } from "@material-ui/core/";
-import * as userAction from "../actions/userAction";
+import * as userAction from "../redux/actions/userAction";
 import * as userConstants from "../constants/userConstants";
 
 const useStyles = makeStyles((theme) => ({

@@ -4,7 +4,7 @@ import { Row, Col, ListGroup, Image, Card } from "react-bootstrap";
 import { useDispatch, useSelector } from "react-redux";
 import ErrorMessage from "../Components/Message/errorMessage";
 import CheckoutSteps from "../Components/CheckoutStep/CheckoutSteps";
-import { createOrder } from "../actions/orderAction";
+import { createOrder } from "../redux/actions/orderAction";
 import * as orderConstants from "../constants/orderConstants";
 import { Button, CircularProgress, makeStyles } from "@material-ui/core/";
 
@@ -102,7 +102,7 @@ const PlaceOrder = ({ history }) => {
                       <Row>
                         <Col md={1}>
                           <Image
-                            src={`https://shoppoint.herokuapp.com/${item.productImage}`}
+                            src={`/${item.productImage}`}
                             alt={item.productName}
                             fluid
                             rounded

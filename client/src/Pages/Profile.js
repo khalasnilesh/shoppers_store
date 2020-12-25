@@ -4,7 +4,7 @@ import { LinkContainer } from "react-router-bootstrap";
 import { useDispatch, useSelector } from "react-redux";
 import ErrorMessage from "../Components/Message/errorMessage";
 //import { Button as MeterialButton } from "@material-ui/core/";
-import { authOrder } from "../actions/orderAction";
+import { authOrder } from "../redux/actions/orderAction";
 import TableLoader from "../Components/Loader/TableLoader";
 
 const Profile = () => {

@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Form } from "react-bootstrap";
 import { useDispatch, useSelector } from "react-redux";
 import FormContainer from "../Components/FormContainer/FormContainer";
-import * as userAction from "../actions/userAction";
+import * as userAction from "../redux/actions/userAction";
 import * as userConstants from "../constants/userConstants";
 import ErrorMessage from "../Components/Message/errorMessage";
 import {
